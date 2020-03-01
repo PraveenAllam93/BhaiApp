@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_margin="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Signup"
+                android:textColor="@color/colorPrimary"
+                android:textSize="32sp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                >
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:id="@+id/profile_pic"
+                    app:siBorderWidth="2dp"
+                    app:siBorderColor="@color/colorPrimary"
+                    android:src="@drawable/men"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|right"
+                    android:id="@+id/profile"
+                    app:siBorderColor="@color/colorPrimary"
+                    app:siBorderWidth="2dp"
+                    android:src="@mipmap/ic_camera"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </FrameLayout>
+
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/textColorSecondary"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textStyle="bold"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginBottom="30dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textStyle="bold"
+                android:paddingLeft="10dp" />
+
+              <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                  android:layout_marginBottom="30dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+              </RadioGroup>
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DateofBirth"
+                android:layout_marginBottom="30dp"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:layout_marginBottom="30dp"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textStyle="bold"
+                android:paddingLeft="10dp" />
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_border"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="SIGNUP"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+<fragment
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.google.android.gms.maps.MapFragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 >
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/setting_top"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                 />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:src="@drawable/call"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                 />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/alert"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_border"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="SEND NOTIFICATION"
+                android:textColor="@color/textColorPrimary"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

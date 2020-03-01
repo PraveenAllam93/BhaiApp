@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="ABOUT US"
+                android:textColor="#000b14"
+                android:textSize="32sp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:src="@mipmap/bhai"
+                android:layout_gravity="center"
+                android:id="@+id/image_view_bell"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_margin="30dp"
+                android:text="On 2nd December 2019 after a series of tragic women assaults with a deep grief a question has aroused to us asking, why can't we stop these anti social elements and their activities. The answer for this question is BHAI APP.
+BHAI APP is a mobile application designed for the safety of women and other human victims who suffer alone helplessly or suffer when being attacked. This application tells the location of any victim to the nearest police station 10trusted contacts and the users of this app who are in and around 20kms by notifying them that someone is in trouble and needs help.
+This is the idea of a 22yr old young man Shankar and his friend Jeevan, resident of Vizag. With the help of AEDIDEA INNOVATIONS and  K.S.G Sarma , K.Lohit sai , A.Praveen and K.Umesh chandra students of Gayatri Vidya Parishad College of Engineering (Autonomous), kommadhi together theydesigned this app for a better India. Thanks to the two non-governamental organisations, Humans rights council and begging Hands Abolition in India who has supported them.
+This app is useful for girls who are stalled, victims of eve teasing and anti social elements. This app is also useful for any person who met with an accident in a remote area or anyone who need medical attention in remote and unknown areas , by fetching and notifying their location.
+The central idea of this app is to react, respond and rescue before the Damage. This will be useful for any individual who travel alone in new places and need help. If this app is used collectively by all the individuals who are the active volunteers the entire society will experience a change and an encouragement by opening the gates of peace and serenity to the present and future generations."
+                android:textColor="#000b14"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

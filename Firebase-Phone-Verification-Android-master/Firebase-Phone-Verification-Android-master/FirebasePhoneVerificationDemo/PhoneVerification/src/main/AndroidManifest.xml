@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phonenumberui">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application>
+
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CountryCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerificationCodeActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
